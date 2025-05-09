@@ -1,0 +1,13 @@
+address_id,customer_id,address_name,street,city,state,zip
+1,1,330 Angelo Cifelli Dr,unit 488,Harrison,NJ,07029
+2,2,201 PASSAIC AVE,APT 302,HARRISON,NJ,07029-1319
+3,2,123 main st,main,NEWARK,NJ,07029
+4,3,330 somerset,somerset,Harrison,NJ,07029
+5,3,201 PASSAIC AVE,APT 302,HARRISON,NJ,07029-1319
+6,4,330 Angelo Cifelli Dr,APT 488,HARRISON,NJ,07029-1319
+7,5,330 Angelo Cifelli Dr,unit 400,Harrison,NJ,07029
+8,6,123 main st,main st,edison,nj,08872
+9,1,345 kalpana,345,newark,nj,07085
+11,8,508 Farley Ave,A,Madison,WI,53705
+12,9,300 somerset,somerset,Harrison,nj,07029
+13,10,123 main st,main st,edison,nj,08872

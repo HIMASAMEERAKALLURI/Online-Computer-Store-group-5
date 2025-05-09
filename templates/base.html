@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}HA CyberCircuit{% endblock %}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <style>
+    body {
+      background-color: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .sidebar {
+      min-height: 100vh;
+      background-color: #f1f3f6;
+      color: #333;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 230px;
+      z-index: 1000;
+      transition: transform 0.3s ease-in-out;
+      border-right: 1px solid #ddd;
+
+    }
+
+    .sidebar a {
+      color: #444;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 18px;
+      font-size: 16px;
+    }
+
+    .sidebar a:hover {
+      color: #0d6efd;
+    }
+
+    .content {
+      margin-left: 250px;
+      padding: 40px;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 180px;
+      margin: 0 auto 25px auto;
+      display: block;
+    }
+
+    .sidebar-toggle {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        transform: translateX(-100%);
+      }
+
+      .sidebar.show {
+        transform: translateX(0);
+      }
+
+      .sidebar-toggle {
+        display: block;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 1100;
+        background-color: #fff;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      }
+
+      .content {
+        margin-left: 0;
+        padding-top: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+<div id="sidebar" class="sidebar">
+  <img src="{{ url_for('static', filename='images/ha logo.jpg') }}" alt="HA CyberCircuit Logo" class="logo">
+  <h5 class="text-center">HA CyberCircuit</h5>
+  <hr class="text-light">
+  {% if session.get('is_admin') %}
+  <a href="{{ url_for('admin_dashboard') }}">📊 Admin Dashboard</a>
+  <a href="{{ url_for('admin_all_products') }}">🛒 Manage Products</a>
+  <a href="{{ url_for('admin_customers') }}">👥 Manage Customers</a>
+  <a href="{{ url_for('admin_orders') }}">📦 View Orders</a>
+  <a href="{{ url_for('analytics') }}">📈 Analytics</a>
+  <a href="{{ url_for('create_promo') }}">🎟 Create Promo</a>
+
+{% elif session.get('user_id') %}
+  <a href="{{ url_for('products') }}">🖥️ Products</a>
+  <a href="{{ url_for('cart') }}">🛒 My Cart</a>
+  <a href="{{ url_for('orders') }}">📦 My Orders</a>
+  <a href="{{ url_for('profile') }}">👤 My Profile</a>
+  <a href="{{ url_for('manage_addresses') }}">🏠 Addresses</a>
+  <a href="{{ url_for('manage_cards') }}">💳 Cards</a>
+
+{% elif not session.get('is_admin') and not session.get('user_id') %}
+  <a href="{{ url_for('products') }}">🖥️ Products</a>
+  <a href="{{ url_for('login') }}">🔐 Login</a>
+  <a href="{{ url_for('register') }}">📝 Register</a>
+{% endif %}
+
+{% if session.get('username') %}
+  <a href="{{ url_for('logout') }}">🚪 Logout ({{ session.get('username') }})</a>
+{% endif %}
+</div>
+
+<div class="content">
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div class="alert alert-info">
+        {% for message in messages %}
+          <div>{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+  
+  {% block content %}{% endblock %}
+</div>
+
+<script>
+  function toggleSidebar() {
+    document.getElementById('sidebar').classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>

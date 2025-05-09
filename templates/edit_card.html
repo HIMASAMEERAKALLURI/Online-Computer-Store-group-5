@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Edit Card | HA CyberCircuit{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2>Edit Credit Card</h2>
+  <form method="POST" action="{{ url_for('update_card', card_id=card.card_id) }}">
+    <div class="mb-3">
+      <label class="form-label">Card Number</label>
+      <input type="text" name="card_number" class="form-control" maxlength="16" value="{{ card.card_number }}" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Expiry (MM/YY)</label>
+      <input type="text" name="expiry" class="form-control" value="{{ card.expiry }}" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">CVV</label>
+      <input type="text" name="cvv" class="form-control" maxlength="4" value="{{ card.cvv }}" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Card</button>
+    <a href="{{ url_for('manage_cards') }}" class="btn btn-secondary ms-2">Cancel</a>
+  </form>
+</div>
+{% endblock %}

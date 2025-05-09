@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %}Analytics | HA CyberCircuit{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2 class="mb-4 text-primary">📊 Admin Analytics</h2>
+
+  <!-- 💰 Total Revenue -->
+  <div class="card text-white bg-success shadow mb-4">
+    <div class="card-body">
+      <h5 class="card-title">💰 Total Revenue</h5>
+      <p class="fs-3">${{ '%.2f'|format(revenue) }}</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- 🔥 Top Products -->
+    <div class="col-md-6">
+      <div class="card shadow mb-4">
+        <div class="card-header bg-dark text-white">
+          <h5 class="mb-0">🔥 Top Products</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          {% for p in top_products %}
+          <li class="list-group-item d-flex justify-content-between">
+            <span>{{ p.name }}</span>
+            <span class="badge bg-primary rounded-pill">{{ p.count }} orders</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <!-- 🏆 Top Customers -->
+    <div class="col-md-6">
+      <div class="card shadow mb-4">
+        <div class="card-header bg-dark text-white">
+          <h5 class="mb-0">🏆 Top Customers</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          {% for c in top_customers %}
+          <li class="list-group-item d-flex justify-content-between">
+            <span>{{ c.username }}</span>
+            <span class="badge bg-info text-dark rounded-pill">{{ c.total }} orders</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

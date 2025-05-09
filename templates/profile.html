@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}My Profile{% endblock %}
+
+{% block content %}
+<h2>👤 My Profile</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label>Email</label>
+        <input type="email" name="email" class="form-control" value="{{ user.email }}" required>
+    </div>
+
+    <div class="mb-3">
+        <label>Phone Number</label>
+        <input type="text" name="phone" class="form-control" value="{{ user.phone }}" required>
+    </div>
+
+    <div class="mb-3">
+        <label>Status</label>
+        <select name="status" class="form-control" required>
+            <option value="Silver" {% if user.status == 'Silver' %}selected{% endif %}>Silver</option>
+            <option value="Gold" {% if user.status == 'Gold' %}selected{% endif %}>Gold</option>
+            <option value="Platinum" {% if user.status == 'Platinum' %}selected{% endif %}>Platinum</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label>Credit</label>
+        <input type="number" name="credit" step="0.01" class="form-control" value="{{ user.credit }}" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">💾 Save Changes</button>
+</form>
+
+{% endblock %}

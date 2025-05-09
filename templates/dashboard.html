@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}👤 Dashboard | HA CyberCircuit{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2 class="mb-4 text-info">👤 {{ user.username }}'s Dashboard</h2>
+
+  <h4>📦 My Orders</h4>
+  <ul class="list-group mb-4">
+    {% for o in orders %}
+      <li class="list-group-item">🖥️ {{ o.product_name }} × {{ o.quantity }} | Status: <strong>{{ o.status }}</strong></li>
+    {% else %}
+      <li class="list-group-item text-muted">No orders found.</li>
+    {% endfor %}
+  </ul>
+
+  <h4>🏠 My Addresses</h4>
+  <ul class="list-group mb-4">
+    {% for a in addresses %}
+      <li class="list-group-item">{{ a.address_name }} — {{ a.street }}, {{ a.city }}, {{ a.state }} {{ a.zip }}</li>
+    {% else %}
+      <li class="list-group-item text-muted">No addresses saved.</li>
+    {% endfor %}
+  </ul>
+
+  <h4>💳 My Cards</h4>
+  <ul class="list-group mb-4">
+    {% for c in cards %}
+      <li class="list-group-item">**** {{ c.card_number[-4:] }} — Exp: {{ c.expiry }}</li>
+    {% else %}
+      <li class="list-group-item text-muted">No cards saved.</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

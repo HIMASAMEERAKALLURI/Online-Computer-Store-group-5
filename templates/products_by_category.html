@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Products by Category | HA CyberCircuit{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2 class="mb-4">📂 Products by Category</h2>
+
+  {% for category, items in categorized_products.items() %}
+    <h4 class="mt-5 text-primary">🗂️ {{ category }}</h4>
+    <table class="table table-hover table-bordered shadow-sm">
+      <thead class="table-light">
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Description</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for product in items %}
+        <tr>
+          <td>{{ product.name }}</td>
+          <td>${{ '%.2f'|format(product.price) }}</td>
+          <td>{{ product.stock }}</td>
+          <td>{{ product.description[:100] }}{% if product.description|length > 100 %}...{% endif %}</td>
+          <td>
+            <a href="{{ url_for('edit_product', product_id=product.product_id) }}" class="btn btn-sm btn-warning">Edit</a>
+            <a href="{{ url_for('delete_product', product_id=product.product_id) }}" class="btn btn-sm btn-danger" onclick="return confirm('Delete this product?')">Delete</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endfor %}
+
+  <a href="{{ url_for('admin_dashboard') }}" class="btn btn-outline-secondary mt-4">⬅ Back to Dashboard</a>
+</div>
+{% endblock %}

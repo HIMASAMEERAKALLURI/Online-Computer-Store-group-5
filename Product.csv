@@ -1,0 +1,116 @@
+product_id,name,price,stock,description,image_filename,category
+2,Acer Nitro Monitor 24”,149.99,2,23.8” Full HD IPS Zero Frame Gaming Monitor with 165Hz refresh rate and 1ms response time — perfect for smooth gameplay and vibrant color accuracy.,acermonitor.jpg,Monitors
+3,Dell XPS 13 (2024),1399.0,11,"Sleek and powerful 13.4” InfinityEdge laptop with Intel Evo platform, 12th Gen i7, 16GB RAM, and 512GB SSD. Ultra-lightweight for productivity on the go.",dell_xps.jpg,Laptops
+4, HP All-in-One Desktop,700.0,19,"24” Full HD display, Intel Core i3, 8GB RAM, 256GB SSD. Comes with wireless keyboard and mouse. A stylish and space-saving solution for home or office.",hp.jpg,Laptops
+5,Logitech K380 Multi-Device Keyboard,39.99,38,"Lightweight Bluetooth keyboard for Windows, macOS, Chrome OS, Android, iOS, and more. Compact, silent typing, and easy-switch buttons for 3 devices.",keyboardlogi.jpg,Mouse & Keyboards
+6,Logitech MX Master 3S Mouse,99.0,26,"Quiet click, Magspeed scroll, ergonomic design, USB-C fast charge, and customizable buttons — ideal for productivity and design professionals.",logi_mouse.jpg,Mouse & Keyboards
+7,MacBook Pro 14” M2 (2023),1999.0,9,"Apple M2 Pro chip, 16GB unified memory, 512GB SSD. Brilliant Retina display, long battery life, and powerful performance in a sleek space gray body.",mac_14.jpg,Laptops
+8,Samsung 870 EVO SSD (1TB),79.99,49,"Reliable and fast 2.5” SATA internal SSD with 1TB capacity. Great for boosting PC speed and performance, trusted by creators and gamers.",samsung_t7.jpg,Accessories
+10,"Xbox Series S, 512GB SSD, All Digital Gaming Console, Robot White",380.0,8,"Get the Xbox Series S, the smallest, sleekest Xbox ever. At 60% smaller than Xbox Series X, it delivers the speed and performance of a next-gen, all-digital console at an accessible price point. Limit 1 per customer.
+60-day price protection
+
+Enjoy price protection for 60 days from your delivery date. If we drop the price of a physical product or you find it lower at an eligible retailer, contact us and we’ll honor a one-time price adjustment. Exclusions apply.",xbox.jpg,Gaming
+11,Xbox Series S Starter Bundle including 3 Months of Game Pass Ultimate,514.0,0,"GAME PASS ULTIMATE: Jump into the world of Xbox with everything you need to play, including an Xbox Series S and hundreds of high-quality games with 3 months of Game Pass Ultimate.*
+IN THE BOX: Bundle includes: Xbox Series S console, 3 month Xbox Game Pass Ultimate membership, one Xbox Wireless Controller, a high-speed HDMI cable, power cable, and 2 AA batteries.
+XBOX SERIES S: Experience the best value in gaming with Xbox Series S, featuring a 512GB custom SSD.
+Make the most of every gaming minute with Quick Resume, lightning-fast load times, and gameplay of up to 120 FPS—all powered by Xbox Velocity Architecture
+Be the first to play new games like Starfield and Forza Motorsport on day one with the included 3 months of Game Pass Ultimate. Plus, enjoy hundreds of other high-quality games like Minecraft Legends, Halo Infinite, and Forza Horizon 5.
+With Game Pass Ultimate, play together with friends via online multiplayer and enjoy an EA Play membership which gives you access to top titles on console and PC, including best-loved series like F1, Battlefield™, and STAR WARS™.",xbox_bundle.jpg,Gaming
+12,Apple - iPhone 16 Pro Max 256GB - Apple Intelligence - Desert Titanium,1199.0,217,"iPhone 16 Pro Max. Built for Apple Intelligence. Featuring a stunning titanium design. Camera Control. 4K 120 fps Dolby Vision. And A18 Pro chip. STUNNING TITANIUM DESIGN—iPhone 16 Pro Max has a strong and light titanium design with a larger 6.9-inch Super Retina XDR display.² It’s remarkably durable with the latest-generation Ceramic Shield material that’s 2x tougher than any smartphone glass.
+
+BUILT FOR APPLE INTELLIGENCE—Apple Intelligence is the personal intelligence system that helps you write, express yourself, and get things done effortlessly.¹ With groundbreaking privacy protections, it gives you peace of mind that no one else can access your data.
+
+TAKE TOTAL CAMERA CONTROL—Camera Control gives you an easier way to quickly access camera tools, like zoom or depth of field, so you can take the perfect shot in record time.
+
+MAGNIFICENT SHOTS—Take your videos to a whole new level with 4K 120 fps Dolby Vision, enabled by the 48MP Fusion camera. The improved 48MP Ultra Wide camera lets you capture mesmerizing detail in macro photos and wide-angle shots.
+
+PHOTOGRAPHIC STYLES—The latest-generation Photographic Styles give you greater creative flexibility, so you can make every photo even more you. And thanks to advances in the image pipeline, you can now reverse any style, any time.
+
+THE POWER OF A18 PRO—A18 Pro chip enables Apple Intelligence with a faster Neural Engine, improved CPU and GPU, and a big jump in memory bandwidth. It also drives advanced video and photo features and powers AAA gaming.
+
+
+",16prom.jpg,Mobiles
+13,Elite Wireless Controller Series 2 – Core,139.99,5,"Xbox Elite Wireless Controller Series 2 for Xbox One, Xbox Series S, Xbox Series X and PC. Tailor the controller to your preferred gaming style with interchangeable thumbstick and paddle shapes. Save up to 3 custom profiles and 1 default profile on the controller and switch between them on the fly with the Profile button. Use Xbox Wireless, Bluetooth or the included USB-C cable to play across your Xbox One and Windows 10 devices.. What's in the box: Xbox Elite Wireless Controller Series 2;
+Swap thumbstick toppers, D-pads, and paddles to tailor your controller to your preferred gaming style. Use Xbox Wireless, Bluetooth, or the included USB-C cable to play across Xbox Series X|S, Xbox One, and Windows.. Safety Data Sheet.",red.jpg,Gaming
+14,HP Elite 600 G9 Tower Desktop,1099.99,1,"Brand	HP
+Operating System	Windows 11 Pro
+CPU Model	Core i9-12900K
+CPU Speed	3.2 GHz
+Cache Size	30 MB
+Graphics Card Description	Integrated
+Graphics Coprocessor	Intel UHD Graphics 770
+Memory Storage Capacity	64 GB
+Memory Slots Available	2
+Specific Uses For Product	Business
+【Powerful Performance 】: Powered by the Intel Core i9-12900K (16 Cores, up to 5.2GHz), delivering exceptional speed and multitasking capabilities for demanding workloads.
+【Ample Storage & Memory】Users can customize their setup with up to 64GB DDR5 RAM, ensuring seamless performance across multiple applications. Storage options include up to 2TB PCIe M.2 Solid State Drive for ultra-fast access speeds, or up to 2TB 3.5 inch HDD, offering ample space for extensive file archives and large applications.
+【Comprehensive Connectivity】Equipped with Type-C, Wi-Fi, Bluetooth, RJ45, HDMI, and 2 DisplayPorts for seamless connectivity with a wide range of devices and peripherals.",hp_elitecpu.jpg,CPUs
+15,Sony WH-1000XM5,328.0,9,"Wireless Noise Canceling Headphones, Auto NC Optimizer, 30-Hour Battery, Alexa Voice Control, Smoky Pink 
+THE BEST NOISE CANCELLATION: Two processors control 8 microphones for unprecedented noise cancellation. With Auto NC Optimizer, noise canceling is automatically optimized based on your wearing conditions and environment.
+MAGNIFICENT SOUND: Engineered to perfection with the new Integrated Processor V1
+CRYSTAL CLEAR HANDS-FREE CALLING: 4 beamforming microphones, precise voice pickup, and advanced audio signal processing.
+LONG BATTERY LIFE: Up to 30-hour battery life with quick charging (3 min charge for 3 hours of playback).(USB Type-C Cable included)",pink_sony.jpg,Music
+16,Logitech C920S Webcam,54.99,20,"C920c webcam has full HD 1080P video for recording and for video calls : A glass lens and full HD mean your recorded videos are crisp and vibrantly colored for best results in recording and video sharing
+Computer Webcam camera features includes HD auto-focus and light correction : Enjoy razor sharp high def in every environment, making this the perfect webcam for all your needs
+The unique C920s cam includes a privacy shutter : Puts you in control of what you show and protects the lens with a snugly fitting cover. Cable length: 5 feet (1.5 meters)
+The amazing C920s has superb stereo audio with dual mics : Capture natural sound on calls and recorded videos. Platform compatibility skype, Google hangouts, facetime and more.
+Compatible with Windows 7, Windows 8, Windows 10 or later, and most video calling applications. Works in USB Video Device Class (UVC) mode with: macOS 10.6 or later (HD 720p on FaceTime for Mac or other supported video-calling clients; Full HD 1080p video recording with QuickTime Player) Chrome OS Android v 5.0 or above (with supported video-calling clients) USB port",cam1.jpg,Cameras
+17,Apple - iMac 24-inch All-in-One - M4 chip - Built for Apple Intelligence - 8 Core CPU - 8 Core GPU - 16GB Memory - 256GB SSD - Green,1299.0,24,"FITS PERFECTLY IN YOUR SPACE—The all-in-one desktop design is strikingly thin, comes in seven vibrant colors, and elevates any space with style.
+
+BUILT FOR APPLE INTELLIGENCE¹—Apple Intelligence is the personal intelligence system that helps you write, express yourself, and get things done effortlessly. With groundbreaking privacy protections, it gives you peace of mind that no one else can access your data—not even Apple.
+
+SUPERCHARGED BY M4—Get more done faster with the Apple M4 chip. From editing photos to creating presentations to gaming, you’ll fly through work and play.
+
+IMMERSIVE DISPLAY—The 24-inch 4.5K Retina display² features 500 nits of brightness and supports up to one billion colors.
+
+ADVANCED CAMERA AND AUDIO—Stay perfectly framed and sound great with a 12MP Center Stage camera, three studio-quality mics, and six speakers with Spatial Audio.
+
+APPS FLY WITH APPLE SILICON³—All your favorites, including Microsoft Excel, Adobe Photoshop, and Zoom, run lightning fast in macOS.
+
+IF YOU LOVE IPHONE, YOU’LL LOVE MAC—Mac works like magic with your other Apple devices. View and control what’s on your iPhone from your Mac with iPhone Mirroring.⁴ Copy something on iPhone and paste it on Mac. Send texts with Messages or use your Mac to make and answer FaceTime calls.⁵
+
+",macgreen.jpg,Monitors
+18,"ASUS Prime B550M-A WiFi II AMD Micro ATX Motherboard with PCIe 4.0, WiFi 6, ECC Memory, HDMI 2.1, RGB Header",113.97,10,"AMD AM4 Socket and PCIe 4.0: The perfect pairing for 3rd Gen AMD Ryzen CPUs
+Ultrafast Connectivity: 1x PCIe 4.0 x16 SafeSlot, WiFi 6 (802.11ax), 1Gb LAN, dual M.2 slots (NVMe SSD)—one with PCIe 4.0 x4 connectivity, USB 3.2 Gen 2 Type-A , HDMI 2.1 (4K at 60HZ), D-Sub & DVI
+Comprehensive Cooling: VRM heatsink, PCH heatsink, hybrid fan headers and Fan Xpert 2 utility
+5X Protection III: all-round protection with LANGuard, DRAM overcurrent protection, overvoltage protection, SafeSlot Core safeguards and stainless-steel back I/O
+Boosted Memory Performance: ASUS OptiMem proprietary trace layout allows memory kits to operate at higher frequencies with lower voltages to maximize system performance.",asus1.jpg,Motherboards & Cables
+19,"JBL Professional 1 Series 104-BT Compact Desktop Reference Monitors with Bluetooth, Black, Sold as Pair, 4.5-inch Speaker Visit the JBL Store",149.99,20,"Experience unparalleled sonic performance and versatility with JBL 104-BT studio monitors, ideal for music production, mixing, and hi-fi audio listening. Their compact size and high-quality sound make them an excellent choice for audio enthusiasts and professionals who demand accurate audio reproduction.
+With the JBL 104-BT's optimized acoustic design and innovative 4.5"" coaxial driver, enjoy high-performance, smooth frequency response, and true-to-life sound that brings your music and multimedia projects to life.
+Revel in the confidence of the JBL legacy with the 104-BT monitors, featuring professional-grade components and meticulous engineering that deliver an immersive audio experience, ensuring that your mixes and playback translate well on any system and your music production is heard exactly as intended.",jbl_pc1.jpg,Music
+20,Google - Pixel 9 Pro XL 256GB (Unlocked) - Porcelain,1199.0,33,"Universal Unlocked
+Compatible with all major U.S. carriers, including Verizon, AT&T and T-Mobile. Also compatible with prepaid carriers including Cricket Wireless, MetroPCS, Google Fi, Total Wireless, Tracfone, and Mint.
+
+The power behind AI on Google Pixel
+Google Tensor G4 is Pixel’s most powerful chip yet. It’s built for advanced AI like Gemini, cutting-edge photos and videos, and smarter ways to help all day.¹
+
+Gemini. Your built-in AI assistant
+Gemini helps you supercharge your ideas. Hold the power button to start writing, planning, learning, and more.²
+
+Unlock Gemini Advanced for a year at no cost to you
+Get access to even more powerful AI features with the Google One AI Premium plan. A total value of $239 at no cost to you.³
+
+Pixel helps keep your info safe.
+Pixel 9 phones have multiple layers of hardware security to help keep you and personal information safe. Pixel 9 phones were recently recognized as the highest-rated for security when tested among other smartphones by a third-party global research firm.
+
+Pro-level photos and video
+The triple rear camera is the most powerful Pixel Camera ever. Get up close with 30x Super Res Zoom.⁴ And it has super sharp, high-res video quality, even in low light and from far away.
+
+A first for video zoom
+Pixel 9 Pro XL combines a powerful telephoto lens and advanced video processing to give you smooth, high-quality video up to 20x with Super Res Zoom Video.⁵
+
+",pixel1.jpg,Mobiles
+21,"Lenovo - Yoga 7i 2-in-1 - Copilot+ PC - 14"" 2K OLED Touchscreen Laptop - Intel Core Ultra 5 Processor - 16GB Memory - 512GB SSD - Luna Grey",1049.99,45,"Smarter Performance, Creative Power with Copilot+ PCs
+Create and connect with Copilot+ PCs. Studio Effects enhance video calls, Cocreator turns text into art, Recall finds files instantly, and Live Captions add real-time subtitles.
+
+It's possible on your Intel AI PC
+The latest Intel Core Ultra processors enable the AI experiences like productivity assistants, text and image creation and collaboration effects to make everything you do easier. Work, play and create with unmatched performance on hours of battery life and built-in security protections.
+
+Built for AI. Engineered to Do It All.
+Intel Evo Edition laptops are co-engineered and verified to deliver superior performance and a fast-charging battery that lasts all day and is packed with the latest technologies, so you won’t have to sacrifice a thing.
+
+Windows 11 Home OS
+Your time is valuable. So, don’t waste it doing things the hard way. Windows 11 brings a fresh experience with new ways to get things done in a fast, fun, and easy kind of way.
+
+Create and Stream in Stunning OLED Clarity
+Ready for epic visuals? The 14"" PureSight OLED delivers stunning colors at 100% sRGB and P3 with Dolby Vision, 60Hz refresh, and up to 600 nits brightness.",l1.jpg,Laptops

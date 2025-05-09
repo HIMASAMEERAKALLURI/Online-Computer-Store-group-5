@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2 class="mb-4"><i class="fas fa-store"></i> Explore Our Products</h2>
+
+  <!-- 🔽 Category Dropdown Filter -->
+  <form method="GET" action="{{ url_for('products') }}" class="mb-4">
+    <label for="category"><strong>Filter by Category:</strong></label>
+    <select name="category" id="category" onchange="this.form.submit()" class="form-select w-auto d-inline-block ms-2">
+      <option value="">-- Select Category --</option>
+      <option value="Laptops" {% if request.args.get('category') == 'Laptops' %}selected{% endif %}>Laptops</option>
+      <option value="Mobiles" {% if request.args.get('category') == 'Mobiles' %}selected{% endif %}>Mobiles</option>
+      <option value="Monitors" {% if request.args.get('category') == 'Monitors' %}selected{% endif %}>Monitors</option>
+      <option value="Gaming" {% if request.args.get('category') == 'Gaming' %}selected{% endif %}>Gaming</option>
+      <option value="Accessories" {% if request.args.get('category') == 'Accessories' %}selected{% endif %}>Accessories</option>
+      <option value="Music" {% if request.args.get('category') == 'Music' %}selected{% endif %}>Music</option>
+      <option value="Mouse & Keyboards" {% if request.args.get('category') == 'Mouse & Keyboards' %}selected{% endif %}>Mouse & Keyboards</option>
+      <option value="CPUs" {% if request.args.get('category') == 'CPUs' %}selected{% endif %}>CPUs</option>
+      <option value="Motherboards & Cables" {% if request.args.get('category') == 'Motherboards & Cables' %}selected{% endif %}>Motherboards & Cables</option>
+      <option value="Cameras" {% if request.args.get('category') == 'Cameras' %}selected{% endif %}>Cameras</option>
+    </select>
+  </form>
+
+  <!-- 🛒 Product Grid -->
+  <div class="row">
+    {% for product in products %}
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+
+        {% if product['image_filename'] %}
+        <img src="{{ url_for('static', filename='images/' ~ product['image_filename']) }}" 
+             class="card-img-top" 
+             style="height: 200px; object-fit: contain; background-color: #f8f9fa;" 
+             alt="{{ product['name'] }}">
+        {% endif %}
+
+        <div class="card-body">
+          <h5 class="card-title">{{ product['name'] }}</h5>
+          <p class="card-text text-muted">
+            {{ product['description'][:100] }}{% if product['description']|length > 100 %}...{% endif %}
+          </p>
+          <p><strong>Category:</strong> {{ product['category'] }}</p>
+          <p><strong>Price:</strong> ${{ product['price'] }}</p>
+          <p>
+            <strong>Stock:</strong>
+            {% if product['stock'] == 0 %}
+              <span class="text-danger">Out of Stock</span>
+            {% elif product['stock'] <= 5 %}
+              <span class="text-warning">Low Stock ({{ product['stock'] }})</span>
+            {% else %}
+              {{ product['stock'] }}
+            {% endif %}
+          </p>
+
+          <!-- Add to Cart Form -->
+          <!-- Replace the existing Add to Cart Form with this -->
+{% if session.get('user_id') %}
+<!-- Add to Cart Form for logged-in users -->
+<form action="{{ url_for('add_to_cart', product_id=product['product_id']) }}" method="POST" class="d-flex align-items-center">
+    <input type="number" name="quantity" min="1" value="1" max="{{ product['stock'] }}" 
+           class="form-control form-control-sm me-2" style="width: 70px;" 
+           {% if product['stock'] == 0 %}disabled{% endif %}>
+    <button type="submit" class="btn btn-sm btn-primary" 
+            {% if product['stock'] == 0 %}disabled{% endif %}>Add to Cart</button>
+</form>
+{% else %}
+<!-- Message for guests -->
+<div class="alert alert-info mt-2" role="alert">
+    <small>
+        <a href="{{ url_for('login') }}" class="alert-link">LOGIN</a> or 
+        <a href="{{ url_for('register') }}" class="alert-link">REGISTER</a> 
+        to add products to cart
+    </small>
+</div>
+{% endif %}
+
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

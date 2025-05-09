@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %}Order Confirmation | HA CyberCircuit{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2 class="mb-4 text-success">🎉 Thank You for Your Order!</h2>
+
+  <h4 class="mb-3">📦 Order Details</h4>
+  <table class="table table-bordered">
+    <thead class="table-light">
+      <tr>
+        <th>Order ID</th>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% set ns = namespace(subtotal_sum=0) %}
+      {% for order in orders %}
+        {% set subtotal = order.quantity * order.price %}
+        {% set ns.subtotal_sum = ns.subtotal_sum + subtotal %}
+        <tr>
+          <td>{{ order.order_id }}</td>
+          <td>{{ order.product_name }}</td>
+          <td>{{ order.quantity }}</td>
+          <td>${{ '%.2f'|format(order.price) }}</td>
+          <td>${{ '%.2f'|format(subtotal) }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h5 class="text-end">Subtotal: ${{ '%.2f'|format(ns.subtotal_sum) }}</h5>
+
+  {% if discount and discount > 0 %}
+    <h5 class="text-end text-success">Promo Code "{{ promo_code }}" Applied: -{{ (discount * 100)|round(0) }}%</h5>
+  {% endif %}
+
+  <h4 class="text-end"><strong>Total:</strong> ${{ '%.2f'|format(total) }}</h4>
+
+  <hr>
+
+  <h4 class="mt-4">🏠 Shipping Address</h4>
+  {% if address %}
+    <p>{{ address.address_name }}<br>{{ address.street }}, {{ address.city }}, {{ address.state }} {{ address.zip }}</p>
+  {% else %}
+    <p class="text-muted">No address found.</p>
+  {% endif %}
+
+  <h4 class="mt-3">💳 Payment Method</h4>
+  {% if card %}
+    <p>Card ending in ****{{ card.card_number[-4:] }} | Exp: {{ card.expiry }}</p>
+  {% else %}
+    <p class="text-muted">No card info found.</p>
+  {% endif %}
+
+  <a href="{{ url_for('products') }}" class="btn btn-primary mt-4">🛍 Continue Shopping</a>
+</div>
+{% endblock %}

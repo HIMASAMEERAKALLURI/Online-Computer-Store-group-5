@@ -1,0 +1,8 @@
+PRAGMA foreign_keys=off;
+
+BEGIN TRANSACTION;
+
+ALTER TABLE Orders ADD COLUMN address_id INTEGER;
+ALTER TABLE Orders ADD COLUMN card_id INTEGER;
+
+COMMIT;
